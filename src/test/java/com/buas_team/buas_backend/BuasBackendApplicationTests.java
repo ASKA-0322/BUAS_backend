@@ -4,6 +4,7 @@ import com.buas_team.buas_backend.entity.User;
 import com.buas_team.buas_backend.mapper.BaseAttrMapper;
 import com.buas_team.buas_backend.mapper.UserMapper;
 import com.buas_team.buas_backend.vo.AgeVO;
+import com.buas_team.buas_backend.vo.CardsVO;
 import com.buas_team.buas_backend.vo.SexVO;
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
@@ -48,5 +49,10 @@ class BuasBackendApplicationTests {
     void t3(){
         List<AgeVO> ageVOList = baseAttrMapper.getAge();
         System.out.println(ageVOList);
+    }
+    @Test
+    void t4(){
+        List<CardsVO> cardsVOList = baseAttrMapper.getCards();
+        System.out.println(cardsVOList);
     }
 }
