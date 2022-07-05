@@ -8,7 +8,7 @@ import org.apache.ibatis.annotations.Select;
 
 import java.util.List;
 
-public interface BaseAttrMapper extends BaseMapper<SexVO> {
+public interface BaseAttrMapper{
     @Select("select sex,count(id) `amount` from bankuser " +
             "group by sex")
     List<SexVO> getSex();

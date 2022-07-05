@@ -16,5 +16,4 @@ public interface UserMapper extends BaseMapper<User> {
             "#{user.age},#{user.creditCards},#{user.area},#{user.consumptionArea}," +
             "#{user.consumptionAmount},#{user.payMethod},#{user.payTime},#{user.commodityCategory})")
     int add(@Param("user")User user);
-
 }

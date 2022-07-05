@@ -1,11 +1,8 @@
 package com.buas_team.buas_backend;
 
 import com.buas_team.buas_backend.entity.User;
-import com.buas_team.buas_backend.mapper.BaseAttrMapper;
-import com.buas_team.buas_backend.mapper.UserMapper;
-import com.buas_team.buas_backend.vo.AgeVO;
-import com.buas_team.buas_backend.vo.CardsVO;
-import com.buas_team.buas_backend.vo.SexVO;
+import com.buas_team.buas_backend.mapper.*;
+import com.buas_team.buas_backend.vo.*;
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
@@ -19,6 +16,12 @@ class BuasBackendApplicationTests {
     private UserMapper userMapper;
     @Resource
     private BaseAttrMapper baseAttrMapper;
+    @Resource
+    private AreaMapper areaMapper;
+    @Resource
+    private PayPreferMapper payPreferMapper;
+    @Resource
+    private ConsumAreaMapper consumAreaMapper;
 
     @Test
     void contextLoads() {
@@ -54,5 +57,24 @@ class BuasBackendApplicationTests {
     void t4(){
         List<CardsVO> cardsVOList = baseAttrMapper.getCards();
         System.out.println(cardsVOList);
+    }
+    @Test
+    void t5(){
+        List<PayPlaceVO> payPlaceVOList = areaMapper.getPayPlace();
+        System.out.println(payPlaceVOList);
+    }
+    @Test
+    void t6(){
+        List<CardVO> holdList = areaMapper.getHoldCard();
+        System.out.println(holdList);
+    }
+    @Test
+    void t7(){
+        List<PayWayVO> payWayVOList = payPreferMapper.getPayWay();
+        List<PayCateVO> payCateVOList = payPreferMapper.getPayCategory();
+        List<ConsumAreaVO> consumAreaVOList = consumAreaMapper.getConsumArea();
+        System.out.println(payWayVOList);
+        System.out.println(payCateVOList);
+        System.out.println(consumAreaVOList);
     }
 }
