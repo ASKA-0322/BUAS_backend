@@ -1,0 +1,13 @@
+----------------------------------------------------------------
+Tue Jul 05 11:41:47 CST 2022:
+Booting Derby version The Apache Software Foundation - Apache Derby - 10.14.2.0 - (1828579): instance a816c00e-0181-cc73-18c6-0000061323b0 
+on database directory memory:D:\code\BUAS_backend\11baf7a3-451c-44da-8c02-a9a9ce44410c with class loader sun.misc.Launcher$AppClassLoader@18b4aac2 
+Loaded from file:/D:/Environment/maven/respository/org/apache/derby/derby/10.14.2.0/derby-10.14.2.0.jar
+java.vendor=Oracle Corporation
+java.runtime.version=1.8.0_321-b07
+user.dir=D:\code\BUAS_backend
+os.name=Windows 11
+os.arch=amd64
+os.version=10.0
+derby.system.home=null
+Database Class Loader started - derby.database.classpath=''
